@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"control_dc_servo\startup_stm32f103xb.o"
+"control_dc_servo\main.o"
+"control_dc_servo\stm32f1xx_it.o"
+"control_dc_servo\stm32f1xx_hal_msp.o"
+"control_dc_servo\stm32f1xx_hal_gpio_ex.o"
+"control_dc_servo\stm32f1xx_hal_tim.o"
+"control_dc_servo\stm32f1xx_hal_tim_ex.o"
+"control_dc_servo\stm32f1xx_hal_uart.o"
+"control_dc_servo\stm32f1xx_hal.o"
+"control_dc_servo\stm32f1xx_hal_rcc.o"
+"control_dc_servo\stm32f1xx_hal_rcc_ex.o"
+"control_dc_servo\stm32f1xx_hal_gpio.o"
+"control_dc_servo\stm32f1xx_hal_dma.o"
+"control_dc_servo\stm32f1xx_hal_cortex.o"
+"control_dc_servo\stm32f1xx_hal_pwr.o"
+"control_dc_servo\stm32f1xx_hal_flash.o"
+"control_dc_servo\stm32f1xx_hal_flash_ex.o"
+"control_dc_servo\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "control_dc_servo\control_dc_servo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "control_dc_servo.map" -o control_dc_servo\control_dc_servo.axf
